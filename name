@@ -1,15 +1,7 @@
-name = input("Введите Ваше имя: ")
-weight = input("Введите Ваш вес: ")
-age = input("Введите Ваш возраст: ")
+name = input("Напишите Ваше имя: ")
+weight = input("Напишите Ваш вес: ")
+age = input("Напишите Ваш возраст: ")
 print("Привет", name, "! Вам", age, "лет и Ваш вес", weight,"кг.", )
 print ("Желаете отведать устриц?")
-
-from sys import platform
-info = 'OS info is \n{}\n\nPython version is {} {}'.format(
-    platform.uname(), sys.version, platform.architecture())
-print(info)
-
-with open('os_info.txt', 'w') as ff:
-    ff.write(info)
 
 

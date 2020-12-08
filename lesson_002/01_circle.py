@@ -16,7 +16,7 @@ print (pl)
 print (round (pl,4))
 
 # Далее, пусть есть координаты точки
-point = (25, 34)
+point = (23, 34)
 # где 23 - координата х, 34 - координата у
 
 # Если точка point лежит внутри того самого круга (radius = 42), то выведите на консоль True,
@@ -31,7 +31,7 @@ sline = (point[0]**2+point[1]**2)**.5
 if radius>sline:
     print ('true')
 else:
-    print('fault')
+    print('false')
 # Аналогично для другой точки
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
@@ -40,7 +40,7 @@ point_2 = (30, 30)
 
 sline2 = (point_2[0]**2+point_2[1]**2)**.5
 if radius<sline2:
-    print ('fault')
+    print ('false')
 else:
     print('true')
 # Пример вывода на консоль:

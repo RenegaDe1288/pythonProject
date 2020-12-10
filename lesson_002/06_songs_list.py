@@ -21,13 +21,17 @@ violator_songs_list = [
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
 
 # TODO здесь ваш код
-sss= violator_songs_list[3][1]+\
-     violator_songs_list[5][1]+\
-     violator_songs_list[8][1]
-print('Три песни звучат',round(sss,2), "минут")
+three_songs = violator_songs_list[3][1]\
+             + violator_songs_list[5][1]\
+             + violator_songs_list[8][1]
+print('Три песни звучат', round(three_songs, 2), "минут")
 
 
 # Есть словарь песен группы Depeche Mode
+# распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
+# #   А другие три песни звучат ХХХ минут
+#
+# # TODO здесь ваш код
 violator_songs_dict = {
     'World in My Eyes': 4.76,
     'Sweetest Perfection': 4.43,
@@ -37,13 +41,8 @@ violator_songs_dict = {
     'Enjoy the Silence': 4.6,
     'Policy of Truth': 4.88,
     'Blue Dress': 4.18,
-    'Clean': 5.68,}
-eee= violator_songs_dict['Sweetest Perfection']+\
-     violator_songs_dict['Policy of Truth']+\
-     violator_songs_dict['Blue Dress']
-print ('А другие три песни звучат',round(eee,2), "минут")
-
-# распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
-#   А другие три песни звучат ХХХ минут
-
-# TODO здесь ваш код
+    'Clean': 5.68, }
+another_three_songs = violator_songs_dict['Sweetest Perfection']\
+                      + violator_songs_dict['Policy of Truth']\
+                      + violator_songs_dict['Blue Dress']
+print('А другие три песни звучат', round(another_three_songs, 2), "минут")

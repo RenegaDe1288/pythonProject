@@ -10,10 +10,8 @@ radius = 42
 #       пи возьмите равным 3.1415926
 #       точность указывается в функции round()
 # TODO здесь ваш код
-radius = 42
 pl = (radius**2) * 3.1415926
-print (pl)
-print (round (pl,4))
+print(round(pl, 4))
 
 # Далее, пусть есть координаты точки
 point = (23, 34)
@@ -27,26 +25,24 @@ point = (23, 34)
 #       квадратный корень - это возведение в степень 0.5
 #       операции сравнения дают булевы константы True и False
 # TODO здесь ваш код
-sline = (point[0]**2+point[1]**2)**.5
-if radius>sline:
-    print ('true')
+line = (point[0]**2+point[1]**2)**.5
+if radius > line:
+    print('true')
 else:
     print('false')
 # Аналогично для другой точки
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
+# Пример вывода на консоль:
+# #
+# # 77777.7777
+# # False
+# # False
 # TODO здесь ваш код
 
-sline2 = (point_2[0]**2+point_2[1]**2)**.5
-if radius<sline2:
-    print ('false')
+line2 = (point_2[0]**2+point_2[1]**2)**.5
+if radius < line2:
+    print('false')
 else:
     print('true')
-# Пример вывода на консоль:
-#
-# 77777.7777
-# False
-# False
-
-

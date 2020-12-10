@@ -15,7 +15,10 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 # Запятая не должна выводиться.
 
 # TODO здесь ваш код
-print (my_favorite_movies[0:10])
-print (my_favorite_movies[42:61])
-print (my_favorite_movies[12:25])
-print (my_favorite_movies[35:40])
+print(my_favorite_movies[0:10])
+print(my_favorite_movies[42:61])
+print(my_favorite_movies[12:25])
+print(my_favorite_movies[35:40])
+
+my_favorite_movies2 = my_favorite_movies.split(',')
+print(my_favorite_movies2[0], my_favorite_movies2[-1], my_favorite_movies2[1], my_favorite_movies2[-2])

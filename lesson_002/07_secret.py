@@ -23,9 +23,11 @@ secret_message = [
 
 # TODO вывести расшифрованное сообщение
 
-sss=secret_message[0][3], \
-    secret_message[1][9:12],\
-    secret_message[2][5:14:2],\
-    secret_message[3][12:6:-1],\
-    secret_message[4][20:15:-1]
+sss = [
+    secret_message[0][3],
+    secret_message[1][9:13],
+    secret_message[2][5:14:2],
+    secret_message[3][12:6:-1],
+    secret_message[4][20:15:-1]]
+
 print(sss)

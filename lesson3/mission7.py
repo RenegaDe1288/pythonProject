@@ -7,3 +7,5 @@ if point < distance:
     print(speed*time)
 else:
     print(point_2)
+
+print(speed*time%115)

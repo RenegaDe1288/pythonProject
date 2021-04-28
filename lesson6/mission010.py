@@ -11,6 +11,6 @@ while balance < 10000:
     else:
         balance = 0
         print('Вы проиграли всё!')
+        print('ИТОГО у вас: ', balance, 'руб')
         break
-print('ИТОГО у вас: ', balance, 'руб')
 print('Игра закончена  ')

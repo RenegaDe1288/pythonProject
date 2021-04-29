@@ -3,4 +3,4 @@ factorial = 1
 for number in range(0, num):
     factorial = (number + 1) * factorial
     print(factorial)
-
+print('Факториал числа', num, 'равен ', factorial)

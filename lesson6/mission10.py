@@ -21,5 +21,7 @@ while start != num:
     divisor = int(divisor / 2)
     count += 1
     print(start)
+    if divisor < 1:
+        divisor = 1
 else:
         print('Вы угадали! Число попыток = ', count)

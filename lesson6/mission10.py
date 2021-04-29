@@ -3,23 +3,23 @@ import random
 num = random.randint(1, 100)
 print(num)
 count = 0
-n = 50
-d = 25
-x = 0
-while n != num:
-    print('Мое число ', n)
-    x = int(input('Твоё число равно, меньше или больше, чем число?'))
-    if x == 3:
-        n = n - d
+start = 50
+divisor = 25
+comp_num = 0
+while start != num:
+    print('Мое число ', start)
+    comp_num = int(input('Твоё число равно, меньше или больше, чем число?'))
+    if comp_num == 3:
+        start = start - divisor
         print('Число меньше, чем нужно. Попробуйте ещё раз!')
-    elif x == 2:
-         n = n + d
+    elif comp_num == 2:
+         start = start + divisor
          print('Число больше, чем нужно. Попробуйте ещё раз!')
-    elif x == 1:
+    elif comp_num == 1:
         print('Вы угадали! Число попыток = ', count)
         break
-    d = int(d / 2)
+    divisor = int(divisor / 2)
     count += 1
-    print(n)
+    print(start)
 else:
         print('Вы угадали! Число попыток = ', count)

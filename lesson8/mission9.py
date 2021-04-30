@@ -2,7 +2,7 @@ import random
 
 number = random.randint(7, 9)
 
-print(number)
+print('Икс равен', number)
 
 dev = 1
 dev_2 = 1
@@ -17,7 +17,7 @@ for num in range(1, 7):
     else:
         all = dev * tool_1
         dev = tool_1 * dev
-        print(2 ** num - 1)
+        print()
         print('На шаге = ', num, ' +++++ вычисление равно', tool_1, '. перемножение ==', all)
 if all != 0:
     for num in range(1, 7):
@@ -30,7 +30,7 @@ if all != 0:
         else:
             all_2 = dev_2 * tool_2
             dev_2 = tool_2 * dev_2
-            print(2 ** num - 1)
+            print()
             print('На шаге = ', num, ' ---- вычисление равно', tool_2, '. перемножение ==', all_2)
     print()
 elif all == 0:

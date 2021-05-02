@@ -29,3 +29,17 @@ for num in range(1, lent+1):
     print('Факториал от числа', num, ' равен', fact)
 print('Сумма равна', summ)
 
+from random import randint
+
+# n = randint(2, 15)
+# total = 0
+# for num in range(1, n+1):
+#     factorial = 1
+#     print(f'{num}! = ', end=' ')
+#     for multiplier in range(1, n):
+#         if num > multiplier:
+#             factorial *= multiplier+1
+#     total += factorial
+#     print(factorial)
+# print(f'Итого: {total}')
+

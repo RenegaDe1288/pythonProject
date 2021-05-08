@@ -6,10 +6,21 @@ def summa(a, b):
     print('среднее ', sum / (b + 1 - a))
 
 
-while True:
-    a = int(input('Введите начало отрезка: '))
-    b = int(input('Введите конец отрезка: '))
-    if a >= b:
-        print('Ошибка ввода. ')
-    else:
-        summa(a, b)
+a = int(input('Введите начало отрезка: '))
+b = int(input('Введите конец отрезка: '))
+if a >= b:
+    print('Ошибка ввода. ')
+else:
+    summa(a, b)
+
+
+def summa1(a, b):
+    print('среднее ', (a+b)/2)
+
+
+a = int(input('Введите начало отрезка: '))
+b = int(input('Введите конец отрезка: '))
+if a >= b:
+    print('Ошибка ввода. ')
+else:
+    summa1(a, b)

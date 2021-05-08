@@ -7,7 +7,7 @@ def line1(x, y):
 
 
 def line2(x_1, x_2, y_1, y_2):
-    line = math.sqrt((x_1 - x_2) ** 2 + (y_1 - y_2) ** 2)
+    line = math.sqrt((x_2 - x_1) ** 2 + (y_2 - y_1) ** 2)
     print('Расстояние равно:', line)
 
 

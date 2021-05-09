@@ -10,6 +10,6 @@ n = int(input('Введите число: '))
 
 count = exp(n)
 
-print('x = ', n/(10**count), '*', 10,'**', count)
+print('Формат плавающей точки: ', 'x = ', n/(10**count), '*', 10,'**', count)
 
 

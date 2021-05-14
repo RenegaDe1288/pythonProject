@@ -8,8 +8,8 @@ for num in range(x, y + 1):
     for sym in num:
         if sym == y:
             count += 1
-        if count == 3:
-            print(num)
+    if count == 3:
+        print(num)
 
 y = str(1909 % 10)
 print(type(y))

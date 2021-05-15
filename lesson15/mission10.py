@@ -1,5 +1,5 @@
 def sort(my_list):
-    for n in range(int(len(my_list)/2)):
+    for n in range(int(len(my_list)/2)+1):
         min = my_list[n]
         for i in range(len(my_list)):
             if my_list[i] < min:

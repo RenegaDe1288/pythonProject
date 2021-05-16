@@ -10,3 +10,5 @@ for i in workers:
 
 print('осталось сотрудников: ', len(workers))
 print(workers)
+print('Минимальная зарплата: ', min(workers))
+print('Максимальная зарплата: ', max(workers))

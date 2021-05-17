@@ -3,7 +3,7 @@ y = int(input('Введите желаемую сумму: '))
 p = int(input('Введие процент по вкладу: '))
 years = 0
 while x < y:
-    x = round((x + x * (p / 100)), 2)
+    x += round( x * (p / 100), 2)
     years += 1
 print('Потребуется лет: ', years)
 print('Сумма на счету будет: ', x)

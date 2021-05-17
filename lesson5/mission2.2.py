@@ -12,3 +12,10 @@ elif a > b < c:
         print(a)
     else:
         print(c)
+
+if b < a > c:
+  print('Max', a)
+elif a < b > c:
+  print('Max', b)
+elif a < c > b:
+  print('Max', c)

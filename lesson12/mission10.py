@@ -1,4 +1,3 @@
-exi = 0
 
 
 def corridor():

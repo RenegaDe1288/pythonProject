@@ -6,7 +6,6 @@ a.extend(b)
 print(a)
 
 for i in a:
-    x = a.count(i)
     for num in range(a.count(i) - 1):
         a.remove(i)
 print('Новый список: ', a)

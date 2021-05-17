@@ -1,6 +1,7 @@
 my_list = [1, 2, 3, 4, 5]
 start = 0
 while len(my_list) > 1:
+    print('Остались игроки: ', my_list)
     print('Начало счета с номера: ', my_list[start])
     for num in range(start, len(my_list)):
         number = int(input('Выбывает человек под номером: '))
@@ -9,8 +10,6 @@ while len(my_list) > 1:
         break
     if start == len(my_list):
         start = 0
-    if len(my_list) == 1:
-        break
-    print('Остались игроки: ', my_list)
 
-print('Победитель: ', my_list)
+
+print('Победитель: ', my_list[0])

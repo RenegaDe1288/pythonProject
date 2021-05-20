@@ -1,20 +1,12 @@
-nice_list = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[10, 11, 12], [13, 14, 15], [16, 17, 18]]]
-
-
-
-def dig(list):
+def dig(enclosed):
     total = []
-    for i in list:
+    for i in enclosed:
         total.extend(i)
     return total
 
 
-# new = [dig(x) for x in nice_list]
-# print(new)
-total = dig([dig(x) for x in nice_list])
+nice_list = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[10, 11, 12], [13, 14, 15], [16, 17, 18]]]
 
-# total = []
-# for i in new:
-#     total.extend(i)
+opened = dig([dig(x) for x in nice_list])
 
-print(total)
+print(opened)

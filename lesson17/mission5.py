@@ -16,10 +16,13 @@ text = 'dsfh!^#hdsfs'
 #
 # print('Список символов: ', new_list[::-1])
 
-def end_of_loop():
-    return StopIteration
-
 new_text = list(text)
-my_list = [x if x != 'h' else end_of_loop() for x in new_text[new_text.index('h'):] ]
-print('Список символов: ', my_list[::-1])
+count = 0
+for i in new_text[::-1]:
+    count -= 1
+    if i == 'h':
+        break
+
+my_list = [x for x in new_text[count:new_text.index('h'):-1] if x != 'h']
+print('Список символов: ', my_list)
 print(new_text.index('h'))

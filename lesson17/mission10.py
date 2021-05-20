@@ -1,15 +1,13 @@
 def view(list):
+    new_str = ''
     for i in list:
-        print(i, end='')
-    print()
+        new_str += i
+    return new_str
 
 
 def find(x):
     global al
-    if al.index(x) < 29:
-        x = al[al.index(x) + 3]
-    else:
-        x = al[abs(len(al) - al.index(x) - 3)]
+    x = al[(al.index(x) + 3) % 32]
     return x
 
 
@@ -17,12 +15,8 @@ a = ord('а')
 al = [chr(i) for i in range(a, a + 32)]
 
 message = 'это питон'
-code = list(message)
 
-code = [find(x) if x != ' ' else ' ' for x in code]
+code = [find(x) if x != ' ' else ' ' for x in message]
 
-view(code)
+print(view(code))
 
-# code = [al[al.index(x) + 3]  if x != ' '  else ' ' for x in code]
-#
-# view(code)

@@ -1,6 +1,6 @@
-text  = input('Введите текст ').split()
-max = ''
+text = input('Введите текст ').split()
+maximum = ''
 for word in text:
     if len(word) > len(max):
-        max = word
+        maximum = word
 print('Слово с максимальным количеством букв: {} , букв = {}'.format(max, len(max)))

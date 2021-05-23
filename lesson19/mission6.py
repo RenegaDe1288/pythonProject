@@ -9,7 +9,7 @@ for i in range(n):
 print(sinonims)
 
 while True:
-    word = input('Введите слово: ')
+    word = input('Введите слово: ').title()
     if word in sinonims:
         print('Синоним слова {} это {}'.format(word, sinonims[word]))
     else:

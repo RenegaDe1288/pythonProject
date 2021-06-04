@@ -24,11 +24,11 @@ play = {}
 for i in range(games):
     print('{} запись'.format(i + 1))
     points = input('Введите имя и грока  и очки ').split()
-    if points[0] in play:
+    if play.get(points[0]):
         play[points[0]].append((i, int(points[1])))
         print(play)
     else:
-        play[points[0]] = [(i, int(points[1]))]
+        play.update({points[0]: [(i, int(points[1]))]})
 
 print(play)
 

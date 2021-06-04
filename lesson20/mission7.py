@@ -11,6 +11,7 @@ def sort(tuple_new):
                     minimum = j
             list1[minimum], list1[i] = list1[i], list1[minimum]
         return tuple(list1)
+        # или просто
         # return (sorted(tuple))
 
 

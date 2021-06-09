@@ -18,10 +18,15 @@ def size(path):
 
 
 path1 = 'E:\\Games'
-total, sum_files, sum_dir = size(path1)
-directory = os.path.split(path1)[1]
+while True:
+    path1 = 'E:\\Games'
+    if os.path.exists(path1):
+        total, sum_files, sum_dir = size(path1)
+        directory = os.path.split(path1)[1]
+        print('Общий размер папки {} : {} Мб '.format(directory, round(total/1024)/1024, 2))
+        print('Общее количество файлов в папке {} :  {} '.format(directory, sum_files))
+        print('Общее количество папок в папке  {} : {} '.format(directory, sum_dir))
+    else:
+        print('Указанный путь не существует')
 
-print('Общий размер папки {} : {} Мб '.format(directory, round(total/1024)/1024, 2))
-print('Общее количество файлов в папке {} :  {} '.format(directory, sum_files))
-print('Общее количество папок в папке  {} : {} '.format(directory, sum_dir))
 

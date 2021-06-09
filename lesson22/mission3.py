@@ -1,8 +1,16 @@
 text = open('zen.txt', 'r')
 text1 = text.read()
 
-summa = sum(1 for i in text1 if i.isalpha())
-print('Количество латинских букв: ',  summa)
+symbols_list =[i.lower() for i in text1 if i.isalpha()]
+print('Количество латинских букв: ',  len(symbols_list))
+min = len(symbols_list)
+for sym in symbols_list:
+    if symbols_list.count(sym) < min:
+        min = symbols_list.count(sym)
+        letter = sym
+
+print('Минимальное количество символов {} : {}'.format(letter,min))
+
 
 text1 = text1.split('\n')
 print('Строк: ', len(text1))

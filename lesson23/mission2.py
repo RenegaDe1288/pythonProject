@@ -1,3 +1,5 @@
+# РЕШЕНИЕ №1_______________________
+
 # import random
 #
 #
@@ -11,10 +13,11 @@
 #         print('Деление на ноль в первой функции невозможно')
 #         return None
 #
+#
 # def f2(x, y):
 #     x -= random.randint(9, 10)
 #     y -= random.randint(4, 5)
-#     print('2  ', x,y)
+#     print('2  ', x, y)
 #     try:
 #         return x / y
 #     except ZeroDivisionError:
@@ -33,25 +36,26 @@
 #     try:
 #         my_list = sorted([res1, res2, number])
 #         print(my_list)
-#         file_2.write('\n'+str(my_list))
+#         file_2.write(str(my_list) + '\n')
 #     except TypeError:
-#         print('В подсчетах строки {} было деление на ноль'.format(pos+1))
+#         print('В подсчетах строки {} было деление на ноль'.format(pos + 1))
 # file.close()
 # file_2.close()
 
-
+# РЕШЕНИЕ №2
 import random
-
 
 def f(x, y):
     x += random.randint(0, 10)
     y += random.randint(0, 5)
     return x / y
 
+
 def f2(x, y):
     x -= random.randint(9, 10)
     y -= random.randint(4, 5)
     return y / x
+
 
 file = open('coordinates.txt', 'r')
 file_2 = open('result.txt', 'w')
@@ -63,9 +67,8 @@ for line in file:
         number = random.randint(0, 100)
         my_list = sorted([res1, res2, number])
         print(my_list)
-        file_2.write(str(my_list)+'\n')
+        file_2.write(str(my_list) + '\n')
     except (TypeError, ZeroDivisionError):
         print('Деление на ноль невозможно \nНевозможно сформировать список')
 file.close()
 file_2.close()
-

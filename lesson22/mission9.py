@@ -1,4 +1,12 @@
-file_1 = open('voyna-i-mir.txt', 'r', encoding='utf-8')
+import zipfile
+
+fantasy_zip = zipfile.ZipFile('voyna-i-mir.zip')
+link = fantasy_zip.extract('voyna-i-mir.txt')
+print(link)
+
+fantasy_zip.close()
+
+file_1 = open(link, 'r', encoding='utf-8')
 text = file_1.read().split('\n')
 
 my_list = [sym for line in text for sym in line if sym.isalpha()]

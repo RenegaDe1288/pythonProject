@@ -30,3 +30,13 @@ headphones_3.micro = True
 print(headphones_1.micro)
 print(headphones_2.micro)
 print(headphones_3.micro)
+
+Monitor.freq = 1000
+Headphones.micro = 'UUUUU'
+print(monitor_1.freq)
+print(monitor_2.freq)
+print(monitor_3.freq)
+print(monitor_4.freq)
+print(headphones_1.micro)
+print(headphones_2.micro)
+print(headphones_3.micro)

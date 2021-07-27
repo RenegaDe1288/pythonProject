@@ -62,7 +62,7 @@ while player.check():
             print('Победил Игрок с очками  {} \n Дилер програл с очками {}'.format(player.player_points,
                                                                                    player.dealer_points))
             break
-    elif answer and answer2 == 2:
+    if (answer and answer2) == 3:
         player.info()
         if player.player_points > player.dealer_points:
             print('Победил       Игрок с очками  {} \n Дилер програл с очками {}'.format(player.player_points,

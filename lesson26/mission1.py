@@ -1,3 +1,5 @@
+""" метод 1 через итератор"""
+
 class CountIterator:
 
     def __init__(self, num: int):
@@ -15,13 +17,6 @@ class CountIterator:
             raise StopIteration
 
 
-def generation(num: int):
-    for i in range(1, num + 1):
-        yield i ** 2
-
-
-""" метод 1 через итератор"""
-
 my_iter = CountIterator(5)
 for i_elem in my_iter:
     print(i_elem, end=' ')
@@ -35,6 +30,12 @@ for i in gen:
 print()
 
 """ метод 3 через генератор"""
+
+
+def generation(num: int):
+    for i in range(1, num + 1):
+        yield i ** 2
+
 
 list_1 = generation(5)
 for i in list_1:

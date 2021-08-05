@@ -1,5 +1,5 @@
 """Решение № 1 циклом-рекурсией  без генератора """
-
+#
 import os
 
 
@@ -26,6 +26,7 @@ size(path1)
 def size(path: str):  # Генератор для проверки имени директории и вывода файлов
     global flag
     for i in os.listdir(path):
+        print(i)
         link = os.path.join(path, i)
         if os.path.isfile(link):
             yield link

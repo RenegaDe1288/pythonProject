@@ -1,7 +1,7 @@
 class MyDict():
     dict = {'wer': 1, 'sdf': 2}
 
-    def __get__(self, key):
+    def get(self, key):
         if key in self.dict:
             return self.dict[key]
         else:
@@ -43,7 +43,7 @@ class MyDict():
 
 dic = MyDict()
 
-print(dic.__get__('we0'))
+print(dic.get('we0'))
 print(dic.items())
 print(dic.values())
 print(dic.keys())

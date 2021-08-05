@@ -1,0 +1,14 @@
+
+Исключение: DepressionError  в день: 2
+Исключение: CarCrashError  в день: 9
+Исключение: DrunkError  в день: 17
+Исключение: GluttonyError  в день: 44
+Исключение: KillError  в день: 49
+Исключение: KillError  в день: 60
+Исключение: CarCrashError  в день: 93
+Исключение: CarCrashError  в день: 93
+Исключение: DrunkError  в день: 99
+Исключение: GluttonyError  в день: 113
+Исключение: DepressionError  в день: 120
+Исключение: GluttonyError  в день: 123
+Исключение: CarCrashError  в день: 123

@@ -61,4 +61,4 @@ workers = [Worker() for _ in range(3)]
 all_persons = managers + agents + workers
 all_salaries = [person.salary() for person in all_persons]
 total_salary = sum(all_salaries)
-print('Общая зарплата: ', round(total_salary, 2))
+print('\nОбщая зарплата: ', round(total_salary, 2))

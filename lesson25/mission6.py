@@ -20,7 +20,7 @@ class House:
 
 class Person:
     def __init__(self):
-        self.hunger = 300
+        self.hunger = 500
         self.happy = 100
 
     def eat(self):
@@ -156,14 +156,14 @@ class Cat:
 
     def eat(self):
         callories = random.randint(0, 10)
-        if house.cat_eat >= 0:
+        if house.cat_eat >= callories:
             self.hunger += callories * 2
             house.cat_eat -= callories
             print('Кот поел')
         else:
-            print('Кошачьей еды нет')
+            print('Кошачьей еды не хватает')
 
-    def tear_u_wallpaper(self):
+    def tear_up_wallpaper(self):
         house.dirt += 5
         self.hunger -= 10
 
@@ -178,10 +178,9 @@ class Cat:
             if answer == 1:
                 self.eat()
             elif answer == 2:
-                self.tear_u_wallpaper()
+                self.tear_up_wallpaper()
             elif answer == 3:
                 self.sleep()
-        self.__str__()
 
 
 husband = Man()
@@ -189,7 +188,7 @@ wife = Women()
 cat = Cat()
 house = House()
 
-while all([husband.check_person(), wife.check_person()]):
+while all([husband.check_person(), wife.check_person(),cat.check_hunger()]):
     print('\n\tДень: ', house.day)
     house.__str__()
     husband.begin()

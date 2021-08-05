@@ -1,14 +1,19 @@
-import os
+import random
 
 
-def count(file):
-    with open(file, 'r', encoding='utf-8') as new:
-        strings = sum([1 for line in new if line != '\n'])
-        print('Количество строк в файле: {} -- {}'.format(file, strings))
-        return strings
+def q_sequence(list, n):
+    if list[0] and list[1] == 1:
+        list_1 = list
+        for i in range(2, n -2):
+            list_1.append(list_1[i - list_1[i - 1]] + list_1[i - list_1[i - 2]])
+        yield list_1
+    else:
+        return print('Ошибка в списке')
 
 
-link = os.listdir('C:/Users/MSI/PycharmProjects/pythonProject/lesson26/')
-list1 = (file for file in link if file.endswith('.py'))
-total_sum = sum([count(file) for file in list1])
-print('Общее количество сток: ', total_sum)
+list = [1, 1]
+num = random.randint(20, 40)
+
+gen_list = (q_sequence(list, num))
+for i in gen_list:
+    print(i, end=' ')

@@ -4,22 +4,22 @@ import math
 class MyMath:
 
     @classmethod
-    def circle_len(cls, radius):
+    def circle_len(cls, radius: (int, float)) -> str:
         len_1 = 2 * math.pi * radius
         return 'Длина окружности: ' + str(len_1)
 
     @classmethod
-    def circle_sq(cls, radius):
+    def circle_sq(cls, radius: (int, float)) -> str:
         sq = math.pi * radius ** 2
         return 'Площадь круга: ' + str(sq)
 
     @classmethod
-    def cube_volume(cls, line):
+    def cube_volume(cls, line: (int, float)) -> str:
         vol = line ** 3
         return 'Объем куба: ' + str(vol)
 
     @classmethod
-    def sphere_sq(cls, radius):
+    def sphere_sq(cls, radius: (int, float)) -> str:
         sq = 4 * math.pi * radius ** 2
         return 'Площадь поверхности сферы: ' + str(sq)
 
